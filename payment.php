@@ -1,51 +1,23 @@
 <?php include( "header.php"); ?>
+<head>
+<link rel="stylesheet" href="dist/css/jquery.dataTables.min.css">
+<link rel="stylesheet" href="dist/css/buttons.dataTables.min.css">
+</head>
 <div class="content-wrapper">
-	<section class="content-header mb-4">
-		<h1>
-       Payment 
-      </h1>
-		<ol class="breadcrumb">
-			<li><a href="#"><i class="fa fa-dashboard"></i> Home</a>
-			</li>
-			<li class="active">Payment</li>
-		</ol>
-	</section>
+	
 	<section class="content ">
-		<div class="row bg-white">
+		<div class="row">
 			<!-- left column -->
-			<div class="col-md-12">
+			<div class="col-md-12 bg-white">
 				<!-- general form elements -->
 				<div class=" ">
 					<div style="padding:20px;">
-						<form id="defaultForm" method="post" action="">
-							<div class=" row ">
-								<div class="col-md-4">
-									<div class="form-group ">
-										<label>Period</label>
-										<input type="text" class="form-control pull-right datepicker">
-									</div>
-								</div>
-								<div class="col-md-2">
-									<div class="form-group ">
-										<label>&nbsp;</label>
-										<div>
-											<button class="btn btn-primary">Filter</button>
-										</div>
-									</div>
-								</div>
-								<div class="col-md-3">
-									<div class="form-group ">
-										<div class="" style="background-color:#4989f4;color:#fff; padding:20px">Total Amount : 250000</div>
-									</div>
-								</div>
-								<div class="clearfix">
-									<hr class="col-md-12" style="margin-bottom:2px">
-								</div>
-								<div class="box-body table-responsive">
-									<table id="example1" class="table table-bordered table-striped">
-										<thead>
-											<tr>
-												<th>Sno</th>
+					<div class="row table-responsive">
+						<table id="example" class="display" style="width:100%">
+        <thead>
+		
+            <tr>
+                <th>Sno</th>
 												<th>Product Name</th>
 												<th>Sub Category</th>
 												<th>Price</th>
@@ -53,10 +25,12 @@
 												<th>Value of Scratch Card / Discount</th>
 												<th>Sale Timings</th>
 												<th>Action</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
+            </tr>
+			
+        </thead>
+        <tbody>
+           
+            <tr>
 												<td>
 													<input type="checkbox" value="">1</td>
 												<td>product1</td>
@@ -84,11 +58,10 @@
 													<a href="" data-toggle="tooltip" title="active"><i class="fa fa-times-circle btn btn-danger" aria-hidden="true"></i></a>
 												</td>
 											</tr>
-										</tbody>
-										<tfoot></tfoot>
-									</table>
-								</div>
-						</form>
+        </tbody>
+
+    </table>	
+	</div>
 						<div class="clearfix">&nbsp;</div>
 						</div>
 					</div>
@@ -99,6 +72,21 @@
 		</div>
 		<!-- /.row -->
 	</section>
+	<script type="text/javascript">
+		var i=1;
+	     $("#add_row").click(function(){
+	      $('#addr'+i).html("<td>"+ (i+1) +"</td><td><div class='form-group col-md-12'><div class=''><input name='user"+i+"' type='text' placeholder='Enter Specialty Name' class='form-control input-md mt-2'  /></div></div> </td>");
+	
+	      $('#tab_logic').append('<tr id="addr'+(i+1)+'"></tr>');
+	      i++; 
+	  });
+	     $("#delete_row").click(function(){
+	         if(i>1){
+	         $("#addr"+(i-1)).html('');
+	         i--;
+	         }
+	     });
+	</script>
 </div>
 <script type="text/javascript">
 	$(document).ready(function() {
@@ -121,8 +109,8 @@
 	            validating: 'glyphicon glyphicon-refresh'
 	        },
 	        fields: {
-	            prdouctname: {
-	               
+	            firstName: {
+	                group: '.col-lg-4',
 	                validators: {
 	                    notEmpty: {
 	                        message: 'The first name is required and cannot be empty'
@@ -130,6 +118,7 @@
 	                }
 	            },
 	            lastName: {
+	                group: '.col-lg-4',
 	                validators: {
 	                    notEmpty: {
 	                        message: 'The last name is required and cannot be empty'
@@ -326,4 +315,20 @@
 	    });
 	});
 </script>
+
+
+
+
 <?php include( "footer.php"); ?>
+<script src="dist/js/dataTables.buttons.min.js"></script>
+<script src="dist/js/buttons.print.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+    $('#example').DataTable( {
+        dom: 'Bfrtip',
+        buttons: [
+            'print'
+        ]
+    } );
+} );
+</script>

@@ -1,4 +1,8 @@
 <?php include( "header.php"); ?>
+<head>
+<link rel="stylesheet" href="dist/css/jquery.dataTables.min.css">
+<link rel="stylesheet" href="dist/css/buttons.dataTables.min.css">
+</head>
 <div class="content-wrapper">
 	<section class="content-header mb-4">
 		<h1>
@@ -17,8 +21,40 @@
 				<!-- general form elements -->
 				<div class=" ">
 					<div style="padding:20px;">
+					<form id="defaultForm" method="post" action="">
+							<div class=" row ">
+								<div class="col-md-3">
+									<div class="form-group ">
+										<label>Period</label>
+										<input type="text" class="form-control pull-right datepicker">
+									</div>
+								</div>
+								<div class="col-md-3 bootstrap-timepicker">
+									<div class="form-group ">
+										<label>Time</label>
+										
+									<input type="text" class="form-control timepicker" name="shopname"  />
+									
+									</div>
+								</div>
+								<div class="col-md-2">
+									<div class="form-group ">
+										<label>&nbsp;</label>
+										<div>
+											<button class="btn btn-primary">Filter</button>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-3">
+									<div class="form-group ">
+										<div class="" style="background-color:#4989f4;color:#fff; padding:20px">Total Amount : 250000</div>
+									</div>
+								</div>
+								<div class="clearfix">
+									<hr class="col-md-12" style="margin-bottom:2px">
+								</div>
 						<div class="box-body table-responsive">
-							<table id="example1" class="table table-bordered table-striped">
+							<table id="example" class="table table-bordered table-striped">
 								<thead>
 									<tr>
 										<th>Sno</th>
@@ -64,21 +100,22 @@
 								<tfoot></tfoot>
 							</table>
 						</div>
+						</form>
 						<div class="clearfix">&nbsp;</div>
+						</div>
 					</div>
+					<!-- /.box -->
 				</div>
-				<!-- /.box -->
 			</div>
+			<!--/.col (right) -->
 		</div>
-		<!--/.col (right) -->
-</div>
-<!-- /.row -->
-</section>
+		<!-- /.row -->
+	</section>
 </div>
 <script type="text/javascript">
 	$(document).ready(function() {
 		 //Timepicker
-	    $(".timepicker").timepicker({
+	     $(".timepicker").timepicker({
 	      showInputs: false
 	    });
 	    // Generate a simple captcha
@@ -302,3 +339,15 @@
 	});
 </script>
 <?php include( "footer.php"); ?>
+<script src="dist/js/dataTables.buttons.min.js"></script>
+<script src="dist/js/buttons.print.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+    $('#example').DataTable( {
+        dom: 'Bfrtip',
+        buttons: [
+            'print'
+        ]
+    } );
+} );
+</script>
