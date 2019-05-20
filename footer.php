@@ -1,5 +1,5 @@
 <footer class="main-footer">
-	<div class="pull-right hidden-xs"> <b>by</b> prachatech</div> <strong>Hospil </strong>
+	<div class="pull-right hidden-xs"> <b>by</b> prachatech</div> <strong>FTP </strong>
 </footer>
 <script src="dist/js/jquery.dataTables.min.js"></script>
 <script src="dist/js/dataTables.bootstrap.min.js"></script>
@@ -61,7 +61,7 @@
 	    );
 	
 	    //Date picker
-	    $('#datepicker').datepicker({
+	    $('.datepicker').datepicker({
 	      autoclose: true
 	    });
 	

@@ -1,110 +1,95 @@
 <?php include( "header.php"); ?>
 <div class="content-wrapper">
-	<section class="content-header mb-4">
+	<section class="content-header mb-2">
 		<h1>
-       Add Product 
+       Banners 
       </h1>
 		<ol class="breadcrumb">
 			<li><a href="#"><i class="fa fa-dashboard"></i> Home</a>
 			</li>
-			<li class="active">Product</li>
+			<li class="active">Banners</li>
 		</ol>
 	</section>
 	<section class="content">
-		<div class="row bg-white">
+		<div class="row">
 			<!-- left column -->
 			<div class="col-md-12">
 				<!-- general form elements -->
 				<div class=" ">
 					<div style="padding:20px;">
-						<form id="defaultForm" method="post" action="">
+						<form id="defaultForm" method="post" class="form-horizontal" action="">
 							<div class=" row ">
-								<div class="  ">
-									<div class="col-md-6">
-										<div class="form-group ">
-											<label>Product Name:</label>
-											<input type="text" class="form-control" placeholder="Enter Product Name" name="prdouctname">
-										</div>
-									</div>
-									<div class="col-md-6">
-										<div class="form-group ">
-											<label>Sub product name :</label>
-											<input type="text" class="form-control" placeholder="Enter Sub Product Name" name="prdouctname">
-										</div>
-									</div>
-									<div class="col-md-3">
-										<div class="form-group ">
-											<label>price :</label>
-											<input type="text" class="form-control" placeholder="Enter Price" name="prdouctname">
-										</div>
-									</div>
-									<div class="col-md-3">
-										<div class="form-group ">
-											<label>Discount :</label>
-											<input type="text" class="form-control" placeholder="Enter Discount" name="prdouctname">
-										</div>
-									</div>
-									<div class="col-md-3">
-										<div class="form-group ">
-											<label>Scratch card :</label>
-											<input type="text" class="form-control" placeholder="Enter Scratch Card" name="prdouctname">
-										</div>
-									</div>
-									<div class="col-md-3">
-										<div class="form-group ">
-											<label>Scratch card price :</label>
-											<input type="text" class="form-control" placeholder="Enter Scratch Card Price" name="prdouctname">
-										</div>
-									</div>
-									<div class="col-md-3">
-										<div class="form-group ">
-											<label>Sales Timings :</label>
-											<input type="text" class="form-control" placeholder="Enter email" name="prdouctname">
-										</div>
-									</div>
-									<div class="col-md-3">
-										<div class="form-group ">
-											<label>Color :</label>
-											<input type="text" class="form-control" placeholder="Enter Color" name="prdouctname">
-										</div>
-									</div>
-									<div class="col-md-3">
-										<div class="form-group ">
-											<label>Qty :</label>
-											<input type="text" class="form-control" placeholder="Enter Quality" name="prdouctname">
-										</div>
-									</div>
-									<div class="col-md-3">
-										<div class="form-group ">
-											<label>Images</label>
-											<input type="file" class="form-control" name="prdouctname">
-										</div>
-									</div>
+								<div class=" col-md-12 ">
+									<table class="table table-bordered table-hover" id="tab_logic">
+										<thead>
+											<tr>
+												<th class="text-center bg-primary">S.no</th>
+												<th class="text-center bg-primary">Banner</th>
+												<th class="text-center bg-primary">Banner Text</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr id='addr0'>
+												<td class="text-center">1</td>
+												<td>
+													<div class="form-group col-md-12">
+														<div class="">
+															<input type="file" class="form-control" name="shopname" placeholder="Enter State name" />
+														</div>
+													</div>
+												</td>
+												<td>
+													<div class="form-group col-md-12">
+														<div class="">
+															<input type="text" class="form-control" name="shopname" placeholder="Enter Text.." />
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr id='addr1'></tr>
+										</tbody>
+									</table>
 								</div>
-								<div class="clearfix">&nbsp;</div>
-								<div class="form-group">
-									<div class="col-lg-12 text-center">
-										<button type="submit" class="btn btn-primary  " name="signup" value="Sign up">Add Product</button>
-									</div>
+							</div>
+							<div class=" row">
+								<div class=" col-md-12 clearfix"> <a id="add_row" class="btn btn-primary pull-left text-white btn-xs">Add row</a>  <a id='delete_row' class="pull-right btn btn-danger text-white btn-xs">Delete row</a>
 								</div>
+							</div>
+							<div class="form-group">
+								<div class=" text-center">
+									<hr>
+									<button type="submit" class="btn btn-primary btn-block" name="signup" value="Sign up">Add Banner</button>
+								</div>
+							</div>
 						</form>
 						<div class="clearfix">&nbsp;</div>
-						</div>
 					</div>
-					<!-- /.box -->
 				</div>
+				<!-- /.box -->
 			</div>
-			<!--/.col (right) -->
 		</div>
-		<!-- /.row -->
-	</section>
+		<!--/.col (right) -->
+</div>
+<!-- /.row -->
+</section>
+<script type="text/javascript">
+	var i=1;
+     $("#add_row").click(function(){
+      $('#addr'+i).html("<td>"+ (i+1) +"</td><td><div class='form-group col-md-12'><div class=''><input name='user"+i+"' type='file' placeholder='Enter Text..' class='form-control input-md mt-2'  /></div></div> </td><td><div class='form-group col-md-12'><div class=''><input name='user"+i+"' type='text' placeholder='Enter Text..' class='form-control input-md mt-2'  /></div></div> </td>");
+
+      $('#tab_logic').append('<tr id="addr'+(i+1)+'"></tr>');
+      i++; 
+  });
+     $("#delete_row").click(function(){
+         if(i>1){
+         $("#addr"+(i-1)).html('');
+         i--;
+         }
+     });
+</script>
 </div>
 <script type="text/javascript">
 	$(document).ready(function() {
-		 //Timepicker
-	    $(".timepicker").timepicker({
-	      showInputs: false
-	    });
 	    // Generate a simple captcha
 	    function randomNumber(min, max) {
 	        return Math.floor(Math.random() * (max - min + 1) + min);
@@ -120,8 +105,8 @@
 	            validating: 'glyphicon glyphicon-refresh'
 	        },
 	        fields: {
-	            prdouctname: {
-	               
+	            firstName: {
+	                group: '.col-lg-4',
 	                validators: {
 	                    notEmpty: {
 	                        message: 'The first name is required and cannot be empty'
@@ -129,6 +114,7 @@
 	                }
 	            },
 	            lastName: {
+	                group: '.col-lg-4',
 	                validators: {
 	                    notEmpty: {
 	                        message: 'The last name is required and cannot be empty'

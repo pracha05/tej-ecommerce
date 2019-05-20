@@ -50,7 +50,7 @@
 		<header class="main-header">
 			<!-- Logo -->
 			<a href="dashboard.php" class="logo">
-				<!-- mini logo for sidebar mini 50x50 pixels --> <span class="logo-mini"><b>H</b></span>
+				<!-- mini logo for sidebar mini 50x50 pixels --> <span class="logo-mini"><b>FTP</b></span>
 				<!-- logo for regular state and mobile devices --> <span class="logo-lg"><img style="height:50px;" class="img-responsive" src="dist/img/logo.png"></span>
 			</a>
 			<!-- Header Navbar: style can be found in header.less -->
@@ -173,11 +173,57 @@
 						<ul class="treeview-menu" style="display: none;">
 						
 							<li><a href="add-product.php">Add Product</a></li>
+							<li><a href="product_list.php">Product List</a></li>
+							</ul>
+	
+					</li>
+					<li class="treeview">
+						<a href="scratchcard.php"> <i class="fa fa-user-plus"></i>  <span>Scratch Card</span>
+							<span class="pull-right-container">
+							  <i class="fa fa-angle-left pull-right"></i>
+							</span>
+						</a>
+						
+	
+					</li>
+					<li class="treeview">
+						<a href="scratchcardvalue.php"> <i class="fa fa-user-plus"></i> <span>Scratch Card Value	</span>
+							<span class="pull-right-container">
+							  <i class="fa fa-angle-left pull-right"></i>
+							</span>
+						</a>
+						
+	
+					</li>
+					<li class="treeview">
+						<a href="payment.php"> <i class="fa fa-credit-card"></i>  <span>Payment</span>
+							<span class="pull-right-container">
+							  <i class="fa fa-angle-left pull-right"></i>
+							</span>
+						</a>
+						
+	
+					</li>
+					<!--<li class="treeview">
+						<a href="referral.php"> <i class="fa fa-credit-card"></i>  <span>Referral</span>
+							<span class="pull-right-container">
+							  <i class="fa fa-angle-left pull-right"></i>
+							</span>
+						</a>
+						
+	
+					</li>-->
+					<li class="treeview">
+						<a href="add-banners.php"> <i class="fa fa-picture-o"></i>  <span>Banners</span>
+							<span class="pull-right-container">
+							  <i class="fa fa-angle-left pull-right"></i>
+							</span>
+						</a>
+						
 	
 					</li>
 					
-					
-				</ul>
+				
 			</section>
 			<!-- /.sidebar -->
 		</aside>

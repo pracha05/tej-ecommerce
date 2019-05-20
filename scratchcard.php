@@ -1,74 +1,69 @@
 <?php include( "header.php"); ?>
 <div class="content-wrapper">
-	<section class="content-header mb-2">
+	<section class="content-header mb-4">
 		<h1>
-       States 
+       Scratch Card List 
       </h1>
 		<ol class="breadcrumb">
 			<li><a href="#"><i class="fa fa-dashboard"></i> Home</a>
 			</li>
-			<li class="active">States</li>
+			<li class="active">Scratch List</li>
 		</ol>
 	</section>
 	<section class="content">
-		<div class="row">
+		<div class="row bg-white">
 			<!-- left column -->
 			<div class="col-md-12">
 				<!-- general form elements -->
 				<div class=" ">
-					
 					<div style="padding:20px;">
-						<form id="defaultForm" method="post" class="form-horizontal" action="">
-							
-								<div class=" row ">
-						<div class=" col-md-6 ">
-							 <table class="table table-bordered table-hover" id="tab_logic">
+						<div class="box-body table-responsive">
+							<table id="example1" class="table table-bordered table-striped">
 								<thead>
-									<tr >
-										<th class="text-center bg-primary">
-											S.no
-										</th>
-										<th class="text-center bg-primary">
-										   State Name
-										</th>
+									<tr>
+										<th>Sno</th>
+										<th>Customer Name</th>
+										<th>Order Details</th>
+										<th>Order Value</th>
+										<th>Value Of Scratch Card</th>
+										<th>Redeemed / Sent on</th>
+										<th>Transaction Status</th>
+										<th>Action</th>
 									</tr>
 								</thead>
 								<tbody>
-									<tr id='addr0'>
-										<td class="text-center">
-										1
-										</td>
-										<td >
-										<div class="form-group col-md-12">
-										<div class="">
-											<input type="text" class="form-control" name="shopname" placeholder="Enter State name" />
-											</div>
-										</div>
-									   
+									<tr>
+										<td>
+											<input type="checkbox" value="">1</td>
+										<td>customer1</td>
+										<td>subproduct</td>
+										<td>300</td>
+										<td>100</td>
+										<td>06-12-2019</td>
+										<td>paid on card</td>
+										<td> <a href="edit-doctor.php" data-toggle="tooltip" title="Edit"><i class="fa fa-pencil btn btn-warning"></i></a>
+											<a href="" data-toggle="tooltip" title="Delete"><i class="fa fa-trash btn btn-danger"></i></a>
+											<a href="" data-toggle="" title="Delete"><i  class="fa fa-check-circle btn btn-success"></i></a>
 										</td>
 									</tr>
-									<tr id='addr1'></tr>
+									<tr>
+										<td>
+											<input type="checkbox" value="">2</td>
+										<td>customer2</td>
+										<td>subproduct</td>
+										<td>300</td>
+										<td>100</td>
+										<td>12-07-2019</td>
+										<td>cash</td>
+										<td> <a href="edit-doctor.php" data-toggle="tooltip" title="Edit"><i class="fa fa-pencil btn btn-warning"></i></a>
+											<a href="" data-toggle="tooltip" title="Delete"><i class="fa fa-trash btn btn-danger"></i></a>
+											<a href="" data-toggle="tooltip" title="active"><i class="fa fa-times-circle btn btn-danger" aria-hidden="true"></i></a>
+										</td>
+									</tr>
 								</tbody>
+								<tfoot></tfoot>
 							</table>
 						</div>
-						</div>
-						<div  class=" row">
-						<div  class=" col-md-6 clearfix">
-							 <a id="add_row" class="btn btn-primary pull-left text-white btn-xs">Add row</a> <a id='delete_row' class="pull-right btn btn-danger text-white btn-xs">Delete row</a>
-						</div>
-						</div>
-								
-							
-							
-							<div class="form-group">
-								<div class="col-lg-6 ">
-								<hr>
-									<button type="submit" class="btn btn-primary btn-block" name="signup" value="Sign up">Add State</button>
-								</div>
-							</div>
-						</form>
-						
-						
 						<div class="clearfix">&nbsp;</div>
 					</div>
 				</div>
@@ -78,25 +73,14 @@
 		<!--/.col (right) -->
 </div>
 <!-- /.row -->
-</section> <script type="text/javascript">
-	      var i=1;
-     $("#add_row").click(function(){
-      $('#addr'+i).html("<td>"+ (i+1) +"</td><td><div class='form-group col-md-12'><div class=''><input name='user"+i+"' type='text' placeholder='Enter State' class='form-control input-md mt-2'  /></div></div> </td>");
-
-      $('#tab_logic').append('<tr id="addr'+(i+1)+'"></tr>');
-      i++; 
-  });
-     $("#delete_row").click(function(){
-         if(i>1){
-         $("#addr"+(i-1)).html('');
-         i--;
-         }
-     });
-</script>
+</section>
 </div>
-
 <script type="text/javascript">
 	$(document).ready(function() {
+		 //Timepicker
+	    $(".timepicker").timepicker({
+	      showInputs: false
+	    });
 	    // Generate a simple captcha
 	    function randomNumber(min, max) {
 	        return Math.floor(Math.random() * (max - min + 1) + min);
@@ -112,8 +96,8 @@
 	            validating: 'glyphicon glyphicon-refresh'
 	        },
 	        fields: {
-	            firstName: {
-	                group: '.col-lg-4',
+	            prdouctname: {
+	               
 	                validators: {
 	                    notEmpty: {
 	                        message: 'The first name is required and cannot be empty'
@@ -121,7 +105,6 @@
 	                }
 	            },
 	            lastName: {
-	                group: '.col-lg-4',
 	                validators: {
 	                    notEmpty: {
 	                        message: 'The last name is required and cannot be empty'

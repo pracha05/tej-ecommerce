@@ -2,12 +2,12 @@
 <div class="content-wrapper">
 	<section class="content-header mb-4">
 		<h1>
-       Add Product 
+       Product List 
       </h1>
 		<ol class="breadcrumb">
 			<li><a href="#"><i class="fa fa-dashboard"></i> Home</a>
 			</li>
-			<li class="active">Product</li>
+			<li class="active">Product List</li>
 		</ol>
 	</section>
 	<section class="content">
@@ -19,73 +19,74 @@
 					<div style="padding:20px;">
 						<form id="defaultForm" method="post" action="">
 							<div class=" row ">
-								<div class="  ">
-									<div class="col-md-6">
-										<div class="form-group ">
-											<label>Product Name:</label>
-											<input type="text" class="form-control" placeholder="Enter Product Name" name="prdouctname">
-										</div>
+								<div class="col-md-4">
+									<div class="form-group ">
+										<label>Period</label>
+										<input type="text" class="form-control pull-right datepicker">
 									</div>
-									<div class="col-md-6">
-										<div class="form-group ">
-											<label>Sub product name :</label>
-											<input type="text" class="form-control" placeholder="Enter Sub Product Name" name="prdouctname">
-										</div>
-									</div>
-									<div class="col-md-3">
-										<div class="form-group ">
-											<label>price :</label>
-											<input type="text" class="form-control" placeholder="Enter Price" name="prdouctname">
-										</div>
-									</div>
-									<div class="col-md-3">
-										<div class="form-group ">
-											<label>Discount :</label>
-											<input type="text" class="form-control" placeholder="Enter Discount" name="prdouctname">
-										</div>
-									</div>
-									<div class="col-md-3">
-										<div class="form-group ">
-											<label>Scratch card :</label>
-											<input type="text" class="form-control" placeholder="Enter Scratch Card" name="prdouctname">
-										</div>
-									</div>
-									<div class="col-md-3">
-										<div class="form-group ">
-											<label>Scratch card price :</label>
-											<input type="text" class="form-control" placeholder="Enter Scratch Card Price" name="prdouctname">
-										</div>
-									</div>
-									<div class="col-md-3">
-										<div class="form-group ">
-											<label>Sales Timings :</label>
-											<input type="text" class="form-control" placeholder="Enter email" name="prdouctname">
-										</div>
-									</div>
-									<div class="col-md-3">
-										<div class="form-group ">
-											<label>Color :</label>
-											<input type="text" class="form-control" placeholder="Enter Color" name="prdouctname">
-										</div>
-									</div>
-									<div class="col-md-3">
-										<div class="form-group ">
-											<label>Qty :</label>
-											<input type="text" class="form-control" placeholder="Enter Quality" name="prdouctname">
-										</div>
-									</div>
-									<div class="col-md-3">
-										<div class="form-group ">
-											<label>Images</label>
-											<input type="file" class="form-control" name="prdouctname">
+								</div>
+								<div class="col-md-2">
+									<div class="form-group ">
+										<label>&nbsp;</label>
+										<div>
+											<button class="btn btn-primary">Filter</button>
 										</div>
 									</div>
 								</div>
-								<div class="clearfix">&nbsp;</div>
-								<div class="form-group">
-									<div class="col-lg-12 text-center">
-										<button type="submit" class="btn btn-primary  " name="signup" value="Sign up">Add Product</button>
+								<div class="col-md-3">
+									<div class="form-group ">
+										<div class="" style="background-color:#4989f4;color:#fff; padding:20px">Total Amount : 250000</div>
 									</div>
+								</div>
+								<div class="clearfix">
+									<hr class="col-md-12" style="margin-bottom:2px">
+								</div>
+								<div class="box-body table-responsive">
+									<table id="example1" class="table table-bordered table-striped">
+										<thead>
+											<tr>
+												<th>Sno</th>
+												<th>Product Name</th>
+												<th>Sub Category</th>
+												<th>Price</th>
+												<th>Scratch Card / Discount</th>
+												<th>Value of Scratch Card / Discount</th>
+												<th>Sale Timings</th>
+												<th>Action</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>
+													<input type="checkbox" value="">1</td>
+												<td>product1</td>
+												<td>subproduct</td>
+												<td>300</td>
+												<td>100</td>
+												<td>100</td>
+												<td>08:45 pm</td>
+												<td> <a href="edit-doctor.php" data-toggle="tooltip" title="Edit"><i class="fa fa-pencil btn btn-warning"></i></a>
+													<a href="" data-toggle="tooltip" title="Delete"><i class="fa fa-trash btn btn-danger"></i></a>
+													<a href="" data-toggle="" title="Delete"><i  class="fa fa-check-circle btn btn-success"></i></a>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<input type="checkbox" value="">1</td>
+												<td>product1</td>
+												<td>subproduct</td>
+												<td>300</td>
+												<td>100</td>
+												<td>100</td>
+												<td>08:45 pm</td>
+												<td> <a href="edit-doctor.php" data-toggle="tooltip" title="Edit"><i class="fa fa-pencil btn btn-warning"></i></a>
+													<a href="" data-toggle="tooltip" title="Delete"><i class="fa fa-trash btn btn-danger"></i></a>
+													<a href="" data-toggle="tooltip" title="active"><i class="fa fa-times-circle btn btn-danger" aria-hidden="true"></i></a>
+												</td>
+											</tr>
+										</tbody>
+										<tfoot></tfoot>
+									</table>
 								</div>
 						</form>
 						<div class="clearfix">&nbsp;</div>
