@@ -1,5 +1,5 @@
 <footer class="main-footer">
-	<div class="pull-right hidden-xs"> <b>by</b> prachatech</div> <strong>FTP </strong>
+	<div class="pull-right hidden-xs"> <b>by</b> prachatech</div> <strong>TEJ ECOMMERCE </strong>
 </footer>
 <script src="dist/js/jquery.dataTables.min.js"></script>
 <script src="dist/js/dataTables.bootstrap.min.js"></script>

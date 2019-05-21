@@ -56,16 +56,16 @@
 											<input type="text" class="form-control" placeholder="Enter Scratch Card Price" name="prdouctname">
 										</div>
 									</div>
-									<div class="col-md-3">
+									<!--<div class="col-md-3">
 										<div class="form-group ">
 											<label>Sales Timings :</label>
 											<input type="text" class="form-control" placeholder="Enter email" name="prdouctname">
 										</div>
-									</div>
+									</div>-->
 									<div class="col-md-3">
 										<div class="form-group ">
-											<label>Color :</label>
-											<input type="text" class="form-control" placeholder="Enter Color" name="prdouctname">
+											<label>Colors :</label>
+											<input type="text" class="form-control" placeholder="Enter Colors" name="prdouctname">
 										</div>
 									</div>
 									<div class="col-md-3">
@@ -77,7 +77,7 @@
 									<div class="col-md-3">
 										<div class="form-group ">
 											<label>Images</label>
-											<input type="file" class="form-control" name="prdouctname">
+											<input type="file" class="form-control" name="prdouctname" multiple>
 										</div>
 									</div>
 								</div>

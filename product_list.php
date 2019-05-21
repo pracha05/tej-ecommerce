@@ -39,9 +39,11 @@
 								</div>
 								<div class="col-md-3">
 									<div class="form-group ">
-										<div class="" style="background-color:#4989f4;color:#fff; padding:20px">Total Amount : 250000</div>
+										<div class="form-control">Total Amount : 250000</div>
 									</div>
 								</div>
+								</div>
+								<div>
 								<div class="clearfix">
 									<hr class="col-md-12" style="margin-bottom:2px">
 								</div>
@@ -54,7 +56,7 @@
 												<th>Sub Category</th>
 												<th>Price</th>
 												<th>Scratch Card / Discount</th>
-												<th>Value of Scratch Card / Discount</th>
+												<th>Value of <br>Scratch Card</th>
 												<th>Sale Timings</th>
 												<th>Action</th>
 											</tr>
@@ -62,21 +64,22 @@
 										<tbody>
 											<tr>
 												<td>
-													<input type="checkbox" value="">1</td>
+													<input type="checkbox" value=""></td>
 												<td>product1</td>
 												<td>subproduct</td>
 												<td>300</td>
 												<td>100</td>
 												<td>100</td>
 												<td>08:45 pm</td>
-												<td> <a href="edit-doctor.php" data-toggle="tooltip" title="Edit"><i class="fa fa-pencil btn btn-warning"></i></a>
+												<td> 
+												<a href="edit-doctor.php" data-toggle="tooltip" title="Edit"><i class="fa fa-pencil btn btn-warning"></i></a>
 													<a href="" data-toggle="tooltip" title="Delete"><i class="fa fa-trash btn btn-danger"></i></a>
-													<a href="" data-toggle="" title="Delete"><i  class="fa fa-check-circle btn btn-success"></i></a>
+													<a href="" data-toggle="tooltip" title="active"><i  class="fa fa-check-circle btn btn-success"></i></a>
 												</td>
 											</tr>
 											<tr>
 												<td>
-													<input type="checkbox" value="">1</td>
+													<input type="checkbox" value=""></td>
 												<td>product1</td>
 												<td>subproduct</td>
 												<td>300</td>
@@ -85,7 +88,7 @@
 												<td>08:45 pm</td>
 												<td> <a href="edit-doctor.php" data-toggle="tooltip" title="Edit"><i class="fa fa-pencil btn btn-warning"></i></a>
 													<a href="" data-toggle="tooltip" title="Delete"><i class="fa fa-trash btn btn-danger"></i></a>
-													<a href="" data-toggle="tooltip" title="active"><i class="fa fa-times-circle btn btn-danger" aria-hidden="true"></i></a>
+													<a href="" data-toggle="tooltip" title="deactive"><i class="fa fa-times-circle btn btn-danger" aria-hidden="true"></i></a>
 												</td>
 											</tr>
 										</tbody>
