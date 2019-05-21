@@ -1,17 +1,13 @@
 <?php include( "header.php"); ?>
-<head>
-<link rel="stylesheet" href="dist/css/jquery.dataTables.min.css">
-<link rel="stylesheet" href="dist/css/buttons.dataTables.min.css">
-</head>
 <div class="content-wrapper">
 	<section class="content-header mb-4">
 		<h1>
-       Scratch Card List 
+       Edit Product 
       </h1>
 		<ol class="breadcrumb">
 			<li><a href="#"><i class="fa fa-dashboard"></i> Home</a>
 			</li>
-			<li class="active">Scratch List</li>
+			<li class="active">Edit</li>
 		</ol>
 	</section>
 	<section class="content">
@@ -21,87 +17,76 @@
 				<!-- general form elements -->
 				<div class=" ">
 					<div style="padding:20px;">
-					<form id="defaultForm" method="post" action="">
+						<form id="defaultForm" method="post" action="">
 							<div class=" row ">
-								<div class="col-md-3">
-									<div class="form-group ">
-										<label>Period</label>
-										<input type="text" class="form-control pull-right datepicker">
+								<div class="  ">
+									<div class="col-md-6">
+										<div class="form-group ">
+											<label>Product Name</label>
+											<input type="text" class="form-control" placeholder="Enter Product Name" name="prdouctname" value="product1">
+										</div>
 									</div>
-								</div>
-								<div class="col-md-3 bootstrap-timepicker">
-									<div class="form-group ">
-										<label>Time</label>
-										
-									<input type="text" class="form-control timepicker" name=""  />
-									
+									<div class="col-md-6">
+										<div class="form-group ">
+											<label>Sub product name</label>
+											<input type="text" class="form-control" placeholder="Enter Sub Product Name" name="prdouctname" value="subproduct">
+										</div>
 									</div>
-								</div>
-								<div class="col-md-3">
-									<div class="form-group ">
-										<label>&nbsp;</label>
-										<div>
-											<button class="btn btn-primary">Go</button>
+									<div class="col-md-3">
+										<div class="form-group ">
+											<label>price</label>
+											<input type="text" class="form-control" placeholder="Enter Price" name="prdouctname" value="300">
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="form-group ">
+											<label>Discount</label>
+											<input type="text" class="form-control" placeholder="Enter Discount" name="prdouctname" value="10%">
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="form-group ">
+											<label>Scratch card / Discount</label>
+											<input type="text" class="form-control" placeholder="Enter Scratch Card" name="prdouctname" value="100">
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="form-group ">
+											<label>Scratch card price</label>
+											<input type="text" class="form-control" placeholder="Enter Scratch Card Price" name="prdouctname" value="200">
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="form-group ">
+											<label>Sales Timings</label>
+											<input type="text" class="form-control" placeholder="Enter sale timings" name="prdouctname" value="12:45 PM">
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="form-group ">
+											<label>Colors</label>
+											<input type="text" class="form-control" placeholder="Enter Colors" name="prdouctname" value="red">
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="form-group ">
+											<label>Qty</label>
+											<input type="text" class="form-control" placeholder="Enter Quality" name="prdouctname" value="100gms">
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="form-group ">
+											<label>Images</label>
+											<input type="file" class="form-control" name="prdouctname" multiple>
 										</div>
 									</div>
 								</div>
-								<div class="col-md-3">
-									<div class="form-group ">
-										<label>&nbsp;</label>
-										<div>
-											<p class="text-center" style="background-color:#ffcc00;color:#fff;padding:7px;">Total Amount : 25000 </p>
-										</div>
+								<div class="clearfix">&nbsp;</div>
+								<div class="form-group">
+									<div class="col-lg-12 text-center">
+										<button type="submit" class="btn btn-primary  " name="signup" value="Sign up">Add Product</button>
 									</div>
 								</div>
-								</div>
-								<div>
-								<div class="clearfix">
-									<hr class="col-md-12" style="margin-bottom:2px">
-								</div>
-						<div class="box-body table-responsive">
-							<table id="example" class="table table-bordered table-striped">
-								<thead>
-									<tr>
-										<th>Sno</th>
-										<th>Customer Name</th>
-										<th>Order Details</th>
-										<th>Value Of Scratch Card</th>
-										<th>Redeemed (Yes/No)</th>
-										<th>Used For Order/Date</th>
-										<th>Action</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>
-											<input type="checkbox" value=""></td>
-										<td>customer1</td>
-										<td>subproduct</td>
-										<td>300</td>
-										<td>06-12-2019</td>
-										<td>paid on card</td>
-										<td> <a href="edit-doctor.php" data-toggle="tooltip" title="Edit"><i class="fa fa-pencil btn btn-warning"></i></a>
-											<a href="" data-toggle="tooltip" title="Delete"><i class="fa fa-trash btn btn-danger"></i></a>
-											<a href="" data-toggle="" title="Delete"><i  class="fa fa-check-circle btn btn-success"></i></a>
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<input type="checkbox" value=""></td>
-										<td>customer2</td>
-										<td>subproduct</td>
-										<td>300</td>
-										<td>12-07-2019</td>
-										<td>cash</td>
-										<td> <a href="edit-doctor.php" data-toggle="tooltip" title="Edit"><i class="fa fa-pencil btn btn-warning"></i></a>
-											<a href="" data-toggle="tooltip" title="Delete"><i class="fa fa-trash btn btn-danger"></i></a>
-											<a href="" data-toggle="tooltip" title="active"><i class="fa fa-times-circle btn btn-danger" aria-hidden="true"></i></a>
-										</td>
-									</tr>
-								</tbody>
-								<tfoot></tfoot>
-							</table>
-						</div>
 						</form>
 						<div class="clearfix">&nbsp;</div>
 						</div>
@@ -117,7 +102,7 @@
 <script type="text/javascript">
 	$(document).ready(function() {
 		 //Timepicker
-	     $(".timepicker").timepicker({
+	    $(".timepicker").timepicker({
 	      showInputs: false
 	    });
 	    // Generate a simple captcha
@@ -341,15 +326,3 @@
 	});
 </script>
 <?php include( "footer.php"); ?>
-<script src="dist/js/dataTables.buttons.min.js"></script>
-<script src="dist/js/buttons.print.min.js"></script>
-<script type="text/javascript">
-$(document).ready(function() {
-    $('#example').DataTable( {
-        dom: 'Bfrtip',
-        buttons: [
-            'print'
-        ]
-    } );
-} );
-</script>

@@ -29,21 +29,24 @@
 										<input type="text" class="form-control pull-right datepicker">
 									</div>
 								</div>
-								<div class="col-md-2">
+								<div class="col-md-5">
 									<div class="form-group ">
 										<label>&nbsp;</label>
 										<div>
-											<button class="btn btn-primary">Filter</button>
+											<button class="btn btn-primary">Go</button>
 										</div>
 									</div>
 								</div>
 								<div class="col-md-3">
 									<div class="form-group ">
-										<div class="form-control">Total Amount : 250000</div>
+										<label>&nbsp;</label>
+										<div>
+											<p class="text-center" style="background-color:#ffcc00;color:#fff;padding:7px;">Total Amount : 25000 </p>
+										</div>
 									</div>
 								</div>
 								</div>
-								<div>
+								<div class="row">
 								<div class="clearfix">
 									<hr class="col-md-12" style="margin-bottom:2px">
 								</div>
@@ -72,7 +75,7 @@
 												<td>100</td>
 												<td>08:45 pm</td>
 												<td> 
-												<a href="edit-doctor.php" data-toggle="tooltip" title="Edit"><i class="fa fa-pencil btn btn-warning"></i></a>
+												<a href="edit-product.php" data-toggle="tooltip" title="Edit"><i class="fa fa-pencil btn btn-warning"></i></a>
 													<a href="" data-toggle="tooltip" title="Delete"><i class="fa fa-trash btn btn-danger"></i></a>
 													<a href="" data-toggle="tooltip" title="active"><i  class="fa fa-check-circle btn btn-success"></i></a>
 												</td>
@@ -86,7 +89,7 @@
 												<td>100</td>
 												<td>100</td>
 												<td>08:45 pm</td>
-												<td> <a href="edit-doctor.php" data-toggle="tooltip" title="Edit"><i class="fa fa-pencil btn btn-warning"></i></a>
+												<td> <a href="edit-product.php" data-toggle="tooltip" title="Edit"><i class="fa fa-pencil btn btn-warning"></i></a>
 													<a href="" data-toggle="tooltip" title="Delete"><i class="fa fa-trash btn btn-danger"></i></a>
 													<a href="" data-toggle="tooltip" title="deactive"><i class="fa fa-times-circle btn btn-danger" aria-hidden="true"></i></a>
 												</td>

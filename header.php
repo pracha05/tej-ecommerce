@@ -165,7 +165,7 @@
 						</a>
 					</li>
 					<li class="treeview">
-						<a href="#"> <i class="fa fa-user-plus"></i>  <span>Product</span>
+						<a href="#"> <i class="fa fa-user-plus"></i>  <span>Product Management</span>
 							<span class="pull-right-container">
 							  <i class="fa fa-angle-left pull-right"></i>
 							</span>
@@ -178,7 +178,7 @@
 	
 					</li>
 					<li class="treeview">
-						<a href="scratchcard.php"> <i class="fa fa-user-plus"></i>  <span>Scratch Card</span>
+						<a href="scratchcard.php"> <i class="fa fa-user-plus"></i>  <span>Scratch Card Management</span>
 							<span class="pull-right-container">
 							  <i class="fa fa-angle-left pull-right"></i>
 							</span>
@@ -196,7 +196,7 @@
 	
 					</li>
 					<li class="treeview">
-						<a href="payment.php"> <i class="fa fa-credit-card"></i>  <span>Payment</span>
+						<a href="payment.php"> <i class="fa fa-credit-card"></i>  <span>Payment Management</span>
 							<span class="pull-right-container">
 							  <i class="fa fa-angle-left pull-right"></i>
 							</span>

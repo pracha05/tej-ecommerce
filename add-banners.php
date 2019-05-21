@@ -11,7 +11,7 @@
 		</ol>
 	</section>
 	<section class="content">
-		<div class="row">
+		<div class="row bg-white">
 			<!-- left column -->
 			<div class="col-md-12">
 				<!-- general form elements -->
@@ -30,11 +30,11 @@
 										</thead>
 										<tbody>
 											<tr id='addr0'>
-												<td class="text-center">1</td>
+												<td>1</td>
 												<td>
 													<div class="form-group col-md-12">
 														<div class="">
-															<input type="file" class="form-control" name="shopname" placeholder="Enter State name" />
+															<input type="file" class="form-control" name="" placeholder="Enter State name" />
 														</div>
 													</div>
 												</td>
@@ -58,7 +58,7 @@
 							<div class="form-group">
 								<div class=" text-center">
 									<hr>
-									<button type="submit" class="btn btn-primary btn-block" name="signup" value="Sign up">Add Banner</button>
+									<button type="submit" class="btn btn-primary " name="signup" value="Sign up">Add Banner</button>
 								</div>
 							</div>
 						</form>

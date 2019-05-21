@@ -25,19 +25,24 @@
 										<input type="text" class="form-control pull-right datepicker">
 									</div>
 								</div>
-								<div class="col-md-2">
+								<div class="col-md-5">
 									<div class="form-group ">
 										<label>&nbsp;</label>
 										<div>
-											<button class="btn btn-primary">Filter</button>
+											<button class="btn btn-primary">Go</button>
 										</div>
 									</div>
 								</div>
 								<div class="col-md-3">
 									<div class="form-group ">
-										<div class="" style="background-color:#4989f4;color:#fff; padding:20px">Total Amount : 250000</div>
+										<label>&nbsp;</label>
+										<div>
+											<p class="text-center" style="background-color:#ffcc00;color:#fff;padding:7px;">Total Amount : 25000 </p>
+										</div>
 									</div>
 								</div>
+								</div>
+								<div>
 								<div class="clearfix">
 									<hr class="col-md-12" style="margin-bottom:2px">
 								</div>

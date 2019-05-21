@@ -22,55 +22,55 @@
 								<div class="  ">
 									<div class="col-md-6">
 										<div class="form-group ">
-											<label>Product Name:</label>
+											<label>Product Name</label>
 											<input type="text" class="form-control" placeholder="Enter Product Name" name="prdouctname">
 										</div>
 									</div>
 									<div class="col-md-6">
 										<div class="form-group ">
-											<label>Sub product name :</label>
+											<label>Sub product name</label>
 											<input type="text" class="form-control" placeholder="Enter Sub Product Name" name="prdouctname">
 										</div>
 									</div>
 									<div class="col-md-3">
 										<div class="form-group ">
-											<label>price :</label>
+											<label>price</label>
 											<input type="text" class="form-control" placeholder="Enter Price" name="prdouctname">
 										</div>
 									</div>
 									<div class="col-md-3">
 										<div class="form-group ">
-											<label>Discount :</label>
+											<label>Discount</label>
 											<input type="text" class="form-control" placeholder="Enter Discount" name="prdouctname">
 										</div>
 									</div>
 									<div class="col-md-3">
 										<div class="form-group ">
-											<label>Scratch card :</label>
+											<label>Scratch card / Discount</label>
 											<input type="text" class="form-control" placeholder="Enter Scratch Card" name="prdouctname">
 										</div>
 									</div>
 									<div class="col-md-3">
 										<div class="form-group ">
-											<label>Scratch card price :</label>
+											<label>Scratch card price</label>
 											<input type="text" class="form-control" placeholder="Enter Scratch Card Price" name="prdouctname">
 										</div>
 									</div>
-									<!--<div class="col-md-3">
-										<div class="form-group ">
-											<label>Sales Timings :</label>
-											<input type="text" class="form-control" placeholder="Enter email" name="prdouctname">
-										</div>
-									</div>-->
 									<div class="col-md-3">
 										<div class="form-group ">
-											<label>Colors :</label>
+											<label>Sales Timings</label>
+											<input type="text" class="form-control" placeholder="Enter sale timings" name="prdouctname">
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="form-group ">
+											<label>Colors</label>
 											<input type="text" class="form-control" placeholder="Enter Colors" name="prdouctname">
 										</div>
 									</div>
 									<div class="col-md-3">
 										<div class="form-group ">
-											<label>Qty :</label>
+											<label>Qty</label>
 											<input type="text" class="form-control" placeholder="Enter Quality" name="prdouctname">
 										</div>
 									</div>

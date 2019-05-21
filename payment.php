@@ -18,12 +18,11 @@
 		
             <tr>
                 <th>Sno</th>
-												<th>Product Name</th>
-												<th>Sub Category</th>
-												<th>Price</th>
-												<th>Scratch Card / Discount</th>
-												<th>Value of Scratch Card / Discount</th>
-												<th>Sale Timings</th>
+												<th>Customer Name</th>
+												<th>Order Details</th>
+												<th>Order Value</th>
+												<th>Order Date</th>
+												<th>Shipping Status</th>
 												<th>Action</th>
             </tr>
 			
@@ -32,13 +31,12 @@
            
             <tr>
 												<td>
-													<input type="checkbox" value="">1</td>
-												<td>product1</td>
+													<input type="checkbox" value=""></td>
+												<td>customer1</td>
 												<td>subproduct</td>
 												<td>300</td>
-												<td>100</td>
-												<td>100</td>
-												<td>08:45 pm</td>
+												<td>03-11-2019</td>
+												<td>done</td>
 												<td> <a href="edit-doctor.php" data-toggle="tooltip" title="Edit"><i class="fa fa-pencil btn btn-warning"></i></a>
 													<a href="" data-toggle="tooltip" title="Delete"><i class="fa fa-trash btn btn-danger"></i></a>
 													<a href="" data-toggle="" title="Delete"><i  class="fa fa-check-circle btn btn-success"></i></a>
@@ -46,16 +44,15 @@
 											</tr>
 											<tr>
 												<td>
-													<input type="checkbox" value="">1</td>
-												<td>product1</td>
+													<input type="checkbox" value=""></td>
+												<td>customer1</td>
 												<td>subproduct</td>
-												<td>300</td>
-												<td>100</td>
-												<td>100</td>
-												<td>08:45 pm</td>
+												<td>200</td>
+												<td>04-11-2019</td>
+												<td>done</td>
 												<td> <a href="edit-doctor.php" data-toggle="tooltip" title="Edit"><i class="fa fa-pencil btn btn-warning"></i></a>
 													<a href="" data-toggle="tooltip" title="Delete"><i class="fa fa-trash btn btn-danger"></i></a>
-													<a href="" data-toggle="tooltip" title="active"><i class="fa fa-times-circle btn btn-danger" aria-hidden="true"></i></a>
+													<a href="" data-toggle="" title="Delete"><i  class="fa fa-check-circle btn btn-success"></i></a>
 												</td>
 											</tr>
         </tbody>
@@ -72,21 +69,7 @@
 		</div>
 		<!-- /.row -->
 	</section>
-	<script type="text/javascript">
-		var i=1;
-	     $("#add_row").click(function(){
-	      $('#addr'+i).html("<td>"+ (i+1) +"</td><td><div class='form-group col-md-12'><div class=''><input name='user"+i+"' type='text' placeholder='Enter Specialty Name' class='form-control input-md mt-2'  /></div></div> </td>");
 	
-	      $('#tab_logic').append('<tr id="addr'+(i+1)+'"></tr>');
-	      i++; 
-	  });
-	     $("#delete_row").click(function(){
-	         if(i>1){
-	         $("#addr"+(i-1)).html('');
-	         i--;
-	         }
-	     });
-	</script>
 </div>
 <script type="text/javascript">
 	$(document).ready(function() {
