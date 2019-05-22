@@ -11,7 +11,33 @@
 			<div class="col-md-12 bg-white">
 				<!-- general form elements -->
 				<div class=" ">
+
 					<div style="padding:20px;">
+					<div class=" row ">
+								<div class="col-md-4">
+									<div class="form-group ">
+										<label>Period</label>
+										<input type="text" class="form-control pull-right datepicker">
+									</div>
+								</div>
+								<div class="col-md-5">
+									<div class="form-group ">
+										<label>&nbsp;</label>
+										<div>
+											<button class="btn btn-primary">Go</button>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-3">
+									<div class="form-group ">
+										<label>&nbsp;</label>
+										<div>
+											<p class="text-center" style="background-color:#ffcc00;color:#fff;padding:7px;">Total Amount : 25000 </p>
+										</div>
+									</div>
+								</div>
+								</div>
+					
 					<div class="row table-responsive">
 						<table id="example" class="display" style="width:100%">
         <thead>

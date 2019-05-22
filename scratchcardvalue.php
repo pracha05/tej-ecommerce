@@ -51,7 +51,8 @@
 										<thead>
 											<tr>
 												<th>Sno</th>
-												<th>Scratch card</th>
+												<th>Customer Name</th>
+												<th>Order details</th>
 												<th>sale value</th>
 												<th>Value of Scratch Card</th>
 												
@@ -61,7 +62,8 @@
 											<tr>
 												<td>
 												<input type="checkbox" value=""></td>
-												<td>SC123456</td>
+												<td>Bayapureddy</td>
+												<td style="width:150px;">Dummy text is text that is used in the publishing industry or by web designers to occupy the space which will later be filled with 'real' content. </td>
 												<td>450</td>
 												<td><input placeholder="Enter value of Scratch Card"  type="text" class="form-control"></td>
 												
