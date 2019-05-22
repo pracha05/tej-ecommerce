@@ -50,7 +50,7 @@
 		<header class="main-header">
 			<!-- Logo -->
 			<a href="dashboard.php" class="logo">
-				<!-- mini logo for sidebar mini 50x50 pixels --> <span class="logo-mini"><b>FTP</b></span>
+				<!-- mini logo for sidebar mini 50x50 pixels --> <span class="logo-mini"><b>E</b></span>
 				<!-- logo for regular state and mobile devices --> <span class="logo-lg"><img style="height:50px;" class="img-responsive" src="dist/img/logo.png"></span>
 			</a>
 			<!-- Header Navbar: style can be found in header.less -->
@@ -158,7 +158,7 @@
 				<ul class="sidebar-menu">
 					<li class="header">MAIN NAVIGATION</li>
 					<li class="treeview">
-						<a href="dashboard.php"> <i class="fa fa-dashboard"></i>  <span>Dashboard</span>
+						<a href="dashboard.php"> <i class="fa fa-dashboard"></i>  <span>Home</span>
 							<span class="pull-right-container">
               
             </span>

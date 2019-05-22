@@ -51,38 +51,23 @@
 										<thead>
 											<tr>
 												<th>Sno</th>
-												<th>Customer Name</th>
-												<th>Order Details</th>
+												<th>Scratch card</th>
+												<th>sale value</th>
 												<th>Value of Scratch Card</th>
-												<th>Add value</th>
-												<th>Action</th>
+												
 											</tr>
 										</thead>
 										<tbody>
 											<tr>
 												<td>
-													<input type="checkbox" value="">1</td>
-												<td>Customer1</td>
-												<td>Loaded</td>
-												<td>300</td>
-												<td>100</td>
-												<td> <a href="edit-doctor.php" data-toggle="tooltip" title="Edit"><i class="fa fa-pencil btn btn-warning"></i></a>
-													<a href="" data-toggle="tooltip" title="Delete"><i class="fa fa-trash btn btn-danger"></i></a>
-													<a href="" data-toggle="" title="Delete"><i  class="fa fa-check-circle btn btn-success"></i></a>
-												</td>
+												<input type="checkbox" value=""></td>
+												<td>SC123456</td>
+												<td>450</td>
+												<td><input placeholder="Enter value of Scratch Card"  type="text" class="form-control"></td>
+												
+										
 											</tr>
-											<tr>
-												<td>
-													<input type="checkbox" value="">1</td>
-												<td>Customer1</td>
-												<td>Loaded</td>
-												<td>300</td>
-												<td>100</td>
-												<td> <a href="edit-doctor.php" data-toggle="tooltip" title="Edit"><i class="fa fa-pencil btn btn-warning"></i></a>
-													<a href="" data-toggle="tooltip" title="Delete"><i class="fa fa-trash btn btn-danger"></i></a>
-													<a href="" data-toggle="" title="Delete"><i  class="fa fa-check-circle btn btn-success"></i></a>
-												</td>
-											</tr>
+											
 										</tbody>
 										<tfoot></tfoot>
 									</table>

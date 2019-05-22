@@ -51,7 +51,7 @@
 									<hr class="col-md-12" style="margin-bottom:2px">
 								</div>
 								<div class="box-body table-responsive">
-									<table id="example" class="table table-bordered table-striped">
+									<table id="example" class="table  table-striped">
 										<thead>
 											<tr>
 												<th>Sno</th>

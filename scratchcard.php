@@ -65,10 +65,10 @@
 										<th>Sno</th>
 										<th>Customer Name</th>
 										<th>Order Details</th>
-										<th>Value Of Scratch Card</th>
+										<th>Value<br> Of Scratch Card</th>
 										<th>Redeemed (Yes/No)</th>
 										<th>Used For Order/Date</th>
-										<th>Action</th>
+										<th style="width:140px;">Action</th>
 									</tr>
 								</thead>
 								<tbody>
